@@ -2,7 +2,7 @@
 Telegram Bot powered by Generative AI
 
 
-Got to Bot Father on telegam bot **@BotFather**    
+Got to Bot Father on telegam **@BotFather**    
 Create your Own bot. Set **name, description, commands** for the bot 
 
 
