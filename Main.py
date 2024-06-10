@@ -31,7 +31,7 @@ async def start_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
 
 async def help_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        '''Hi! Welcome to @hurrahgpt_bot \nTHE BOT IS FREE TO USE \n
+        '''Hi! Welcome to @example_bot \nTHE BOT IS FREE TO USE \n
 The bot can assist you with any problem and can write code for you \n
 You can get a description of an image \n
 For Question answering just write your question here and you will get the answer \n
@@ -65,7 +65,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         file.write(f'{update.message.chat.username} -- {text}\n')
 
     if any(greeting in text.lower().startswith(greeting) for greeting in ["hi", "hello", "hey"]):
-        await update.message.reply_text("Hi there! I'm Hurrah GPT. What can I do for you today?")
+        await update.message.reply_text("Hi there! I'm example_bot. What can I do for you today?")
     else:
         await handle_text_message(update, text)
 
